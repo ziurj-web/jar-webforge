@@ -61,6 +61,11 @@ body {
     height: 100%;
 }
 
+.navigation__right {
+    display: flex;
+    justify-content: end;
+}
+
 .navigation__links-container {
     display: flex;
     gap: 1.5rem;
@@ -247,7 +252,6 @@ a {
     background-color: #E74C3C;
     border: 10px solid orange;
     transform: scale(1.075);  /* make it pop */
-    z-index: 1;
     filter: drop-shadow(0 0 10px #00000071);
 }
 
@@ -618,8 +622,34 @@ footer {
     margin-top: 2rem;
 }
 
+.navigation__hamburger-menu {
+    display: none;
+}
+
+
+
 /* ====== Tablet Styles ====== */
 @media (min-width: 600px) and (max-width: 1023px) {
+    .navigation__links-container {
+        display: none;
+    }
+    
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        padding-block: 3rem;
+        background-color: #2b3d4f;
+        backdrop-filter: blur(5px);
+    }
+
+    .navigation__hamburger-menu {
+        display: block;
+    }
+
     .services__cards-container {
         flex-direction: column;
     }
@@ -653,6 +683,26 @@ footer {
 
 /* ====== Phone Styles ====== */
 @media (max-width: 599px) {
+    .navigation__links-container {
+        display: none;
+    }
+    
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        padding-block: 3rem;
+        background-color: #2b3d4f;
+        backdrop-filter: blur(5px);
+    }
+
+    .navigation__hamburger-menu {
+        display: block;
+    }
+
     .header__buttons-container {
         flex-direction: column;
     }
