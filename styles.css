@@ -126,7 +126,7 @@ a {
 }
 
 .header__title {
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .header__title-yours {
@@ -171,6 +171,7 @@ a {
     font-size: 42px;
     color: #333333;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .services__title {
@@ -630,6 +631,10 @@ footer {
 
 /* ====== Tablet Styles ====== */
 @media (min-width: 600px) and (max-width: 1023px) {
+    .nav__container {
+        width: 90%;
+    }
+
     .navigation__links-container {
         display: none;
     }
@@ -650,6 +655,29 @@ footer {
         display: block;
     }
 
+    .navigation__link {
+        padding: 1rem 8rem;
+    }
+
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .header__title {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        line-height: 4rem;
+    }
+
+    .header__subtext {
+        margin-bottom: 2rem;
+    }
+
+    .header__content {
+        gap: 0;
+    }
+
     .services__cards-container {
         flex-direction: column;
     }
@@ -660,6 +688,10 @@ footer {
 
     .about__container {
         flex-direction: column-reverse;
+    }
+
+    .about__btn {
+        width: 100%;
     }
 
     .form__container {
@@ -683,6 +715,10 @@ footer {
 
 /* ====== Phone Styles ====== */
 @media (max-width: 599px) {
+    .nav__container {
+        width: 90%;
+    }
+    
     .navigation__links-container {
         display: none;
     }
@@ -703,8 +739,32 @@ footer {
         display: block;
     }
 
+    .navigation__link {
+        padding: 1rem 8rem;
+    }
+
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+
+    .header__title {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        line-height: 4rem;
+    }
+
+    .header__subtext {
+        margin-bottom: 2rem;
+    }
+
+    .header__content {
+        gap: 0;
+    }
+
     .header__buttons-container {
         flex-direction: column;
+        width: 100%;
     }
 
     .services__cards-container {
@@ -724,6 +784,10 @@ footer {
         align-items: center;
         text-align: center;
         gap: 2rem;
+    }
+
+    .about__btn {
+        width: 100%;
     }
 
     .form__container {
