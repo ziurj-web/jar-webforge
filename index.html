@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <link rel="preload" href="./font/Lexend-Variable.ttf" as="font" type="font/ttf" crossorigin>
-    <!-- <script type="text/javascript">
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-        Cal("init", "30min", {origin:"https://app.cal.com"});
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", "30min", {origin:"https://app.cal.com"});
 
-        Cal.ns["30min"]("inline", {
-            elementOrSelector:"#my-cal-inline-30min",
-            config: {"layout":"month_view"},
-            calLink: "jarwebforge/30min",
-        });
+    
+    // Important: Please add the following attributes to the element that should trigger the calendar to open upon clicking.
+    // `data-cal-link="jarwebforge/30min"`
+    // data-cal-namespace="30min"
+    // `data-cal-config='{"layout":"month_view"}'`
 
-        Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
-    </script> -->
-        <!-- Cal inline embed code ends -->
+    Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+    </script>
+    <!-- Cal element-click embed code ends -->
 </head>
 <body>
     <div class="navigation">
@@ -36,7 +37,7 @@
                     <li class=""><a href="./blog.html" class="navigation__link">Blog</a></li>
                     <li class=""><a href="./about.html" class="navigation__link">About</a></li>
                     <li class=""><a href="./services.html" class="navigation__link">Services</a></li>
-                    <li class=""><a href="./book-a-call.html" class="cta-button">Book a call</a></li>
+                    <li class=""><a href="#meet" class="cta-button">Book a call</a></li>
                 </ul>
             </div>
         </div>
@@ -46,8 +47,8 @@
             <h1 class="header__title">A Website That's Truly <span class="header__title-yours">Yours</span>.</h1>
             <p class="header__subtext">Built in real code so you own it outright — no subscriptions, no hidden fees, no lock-ins.</p>
             <div class="header__buttons-container">
-                <a href="#" class="cta-button">Claim Your Website</a>
-                <a href="#" class="header__button-learn-more">Learn More</a>
+                <a href="#meet" class="cta-button">Get Started Today</a>
+                <a href="#about" class="header__button-learn-more">Learn More</a>
             </div>
         </div>
     </header>
@@ -93,7 +94,7 @@
                     <p class="services_card-asterisk">*additional initial charges for after the 5th page.</p>
                 </div>
             </div>
-            <a href="#" class="cta-button">Claim Your Website</a>
+            <a href="#" class="cta-button">Book Your Starter Website</a>
         </div>
     </div>
     <div class="development">
@@ -133,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__container container">
             <div class="about__info-container">
                 <h2 class="section__title">ABOUT</h2>
@@ -182,12 +183,13 @@
             </div>
         </div>
     </div>
-    <div class="meet">
+    <div class="meet" id="meet">
         <div class="meet__container container">
             <h2 class="section__title">Contact</h2>
             <div class="meet__subheading-container">
                 <p class="meet__subheading">Let's talk in real-time!</p>
                 <p class="meet__subheading">Go ahead and book a call.</p>
+                <a data-cal-link="jarwebforge/30min" class="cta-button meeting-button">Click here to schedule a call</a>
             </div>
             <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
         </div>
@@ -219,7 +221,7 @@
                 <p class="footer__description">
                     Built with meticulous attention to detail, our site development prioritizes the optimization of page layout to adhere to the best possible conventions. Every element is carefully crafted to enhance user experience, ensuring seamless navigation and maximum engagement.
                 </p>
-                <a href="#" class="cta-button">Book a call</a>
+                <a href="#meet" class="cta-button">Book a call</a>
                 <p class="footer__copyright">&copy; 2025 by <a href="#" class="footer__creator-tag">JAR WEBFORGE</a></p>
             </div>
             <div class="footer__right-container">
