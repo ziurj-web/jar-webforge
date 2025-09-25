@@ -110,6 +110,9 @@ body {
 .header__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 0.5rem;
 }
 
@@ -597,4 +600,33 @@ footer {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+}
+
+/* ====== Tablet Styles ====== */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .services__cards-container {
+        flex-direction: column;
+    }
+
+    .development__steps-container {
+        flex-direction: column;
+    }
+
+    .about__container {
+        flex-direction: column-reverse;
+    }
+
+    .form__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form__contact-info-container {
+        flex-direction: column;
+    }
+}
+
+/* ====== Phone Styles ====== */
+@media (max-width: 599px) {
+
 }
