@@ -582,6 +582,8 @@ footer {
     gap: 0.5rem;
 }
 
-.footer__email-icon {
-    margin-right: 0.5rem;
+.footer__email {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
