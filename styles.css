@@ -634,6 +634,14 @@ footer {
 
 /* ====== Shared styles for <= 1023px ====== */
 @media (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav__container {
+        width: 95%;
+    }
+
   .navigation__links-container {
     display: none;
   }
@@ -668,7 +676,7 @@ footer {
   }
 
   .header__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     line-height: 4rem;
   }
@@ -710,12 +718,18 @@ footer {
   .nav__container,
   .container {
     width: 90%;
-    padding: 5rem 3rem;
+    padding: 5rem 0;
   }
 
   .header__buttons-container {
     flex-direction: column;
     width: 100%;
+  }
+
+  .header__title {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 2rem;
   }
 
   .about__info-container {
