@@ -631,9 +631,7 @@ footer {
 
 /* ====== Tablet Styles ====== */
 @media (min-width: 600px) and (max-width: 1023px) {
-    .nav__container {
-        width: 90%;
-    }
+   
 
     .navigation__links-container {
         display: none;
@@ -657,6 +655,10 @@ footer {
 
     .navigation__link {
         padding: 1rem 8rem;
+    }
+
+    .navigation__right, .navigation__left {
+        width: 100%;
     }
 
     .header {
