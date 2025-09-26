@@ -713,6 +713,14 @@ footer {
         flex-direction: column-reverse;
         gap: 5rem;
     }
+
+    .footer__right-container {
+        flex-direction: column;
+    }
+
+    .navigation__link {
+        padding: 0;
+    }
 }
 
 /* ====== Phone Styles ====== */
@@ -809,5 +817,9 @@ footer {
     .container {
         width: 90%;
         padding: 5rem 3rem;
+    }
+
+    .navigation__link {
+        padding: 0;
     }
 }
