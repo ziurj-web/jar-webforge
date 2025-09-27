@@ -721,6 +721,10 @@ footer {
     padding: 5rem 0;
   }
 
+  .header__content {
+    padding-top: 6rem;
+  }
+
   .header__buttons-container {
     flex-direction: column;
     width: 100%;
