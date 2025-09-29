@@ -629,6 +629,13 @@ footer {
 
 .navigation__hamburger-menu {
     display: none;
+    background: none;
+    border: none;
+}
+
+.navigation__hamburger-menu:hover {
+    background-color: rgba(255, 255, 255, 0.244);
+    border-radius: 5px;
 }
 
 
@@ -660,6 +667,7 @@ footer {
     padding-block: 3rem;
     background-color: #2b3d4f;
     backdrop-filter: blur(5px);
+    border-bottom: 3px solid #ecf0f19d;
   }
 
   .navigation__hamburger-menu {
