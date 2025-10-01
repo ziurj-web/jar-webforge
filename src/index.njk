@@ -152,6 +152,20 @@ layout: "base.njk"
         </div>
     </div>
 </div>
+<div class="blog">
+    <div class="blog__container container">
+        <h2 class="blog__section-title section__title">Featured Blogs</h2>
+        <div class="blog__items-container">
+            {# Loop through each post tagged "post" #}
+            {%- for post in collections.featured | reverse -%}
+                
+                {% include "article-snippet.njk" %}
+
+            {% endfor%}
+        </div>
+        <a href="/blog" class="blog__more-btn cta-button">More blogs</a>
+    </div>
+</div>
 <div class="faq">
     <div class="faq__container container">
         <h2 class="section__title">Web Design & Website Development FAQs</h2>
@@ -191,7 +205,7 @@ layout: "base.njk"
 </div>
 <div class="meet" id="meet">
     <div class="meet__container container">
-        <h2 class="section__title">Contact</h2>
+        <h2 class="section__title section__title-white">Contact</h2>
         <div class="meet__subheading-container">
             <p class="meet__subheading">Let's talk in real-time!</p>
             <p class="meet__subheading">Go ahead and book a call.</p>
