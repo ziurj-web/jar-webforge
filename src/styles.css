@@ -753,6 +753,55 @@ footer {
     background-color: #E74C3C;
 }
 
+.page__header {
+    background-color: #ECF0F1;
+    width: 100%;
+}
+
+.page__header-container {
+    margin-top: 5rem;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about__page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about__page h2 {
+    font-size: 2rem;
+}
+
+.about__page-img {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.about__page-container section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.about__page article {
+    color: #333;
+    max-width: 700px;
+}
+
+.about__page-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.about__page-list li::before {
+    content: "➤ ";
+    padding-left: 2rem;
+}
+
 /* ====== Shared styles for <= 1023px ====== */
 @media (max-width: 1023px) {
     .container {

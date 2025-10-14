@@ -1,11 +1,12 @@
 ---
 title: Blog
 layout: "base.njk"
+pageHeader: Blog
 ---
 
 <div class="blog__page">
+    {% include "page-header.njk"%}
     <div class="blog__page-container container">
-        <h1 class="section__title">Blogs</h1>
         {# Loop through each post tagged "post" #}
         {%- for post in collections.post | reverse -%}
             
@@ -13,4 +14,5 @@ layout: "base.njk"
 
         {% endfor%}
     </div>
+    {% include "cta-section.njk"%}
 </div>
