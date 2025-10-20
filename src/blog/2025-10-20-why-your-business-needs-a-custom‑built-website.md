@@ -7,7 +7,7 @@ author: Jose Ruiz
 date: 2025-10-20T09:06:00.000-04:00
 tags:
   - post
-Image: /assets/blog/computer_img.webp
+image: /assets/blog/computer_img.webp
 imageAlt: Computer and mobile website representation graphic - Web Development
 ---
 In today's digital era, your website is most often the first point of contact for customers with your company. A majority use simple website builders like Wix, Squarespace, or Shopify, but there are substantial advantages to having a custom-built website that most entrepreneurs are not aware of.

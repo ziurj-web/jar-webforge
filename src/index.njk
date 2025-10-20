@@ -146,8 +146,8 @@ layout: "base.njk"
         <h2 class="blog__section-title section__title">Featured Blogs</h2>
         <div class="blog__items-container">
             {# Loop through each post tagged "post" #}
-            {%- for post in collections.featured | reverse -%}
-                
+            {%- for post in collections.post | reverse -%}
+            
                 {% include "article-snippet.njk" %}
 
             {% endfor%}

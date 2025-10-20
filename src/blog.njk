@@ -8,11 +8,11 @@ pageHeader: Blog
     {% include "page-header.njk"%}
     <div class="blog__page-container container">
         {# Loop through each post tagged "post" #}
-        {# {%- for post in collections.post | reverse -%}
+        {%- for post in collections.post | reverse -%}
             
             {% include "article-snippet.njk" %}
 
-        {% endfor%} #}
+        {% endfor%}
     </div>
     {% include "cta-section.njk"%}
 </div>
