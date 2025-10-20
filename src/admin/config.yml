@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: ziurj-web/jar-webforge
   branch: main
 # Media folder name can change to include portfoilio items as well.
