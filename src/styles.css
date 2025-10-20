@@ -715,6 +715,13 @@ footer {
     color: #333;
 }
 
+.article__content h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.art
+
 .article__container {
     display: flex;
     flex-direction: column;
@@ -734,9 +741,8 @@ footer {
 .article__img {
   width: 100%;
   max-width: 600px;
-  height: 400px;
   object-fit: cover;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .blog {

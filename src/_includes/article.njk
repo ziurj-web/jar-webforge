@@ -10,9 +10,13 @@ layout: "base.njk"
         </div>
         <figure class="article__figure">
             <img src="{{ image }}" alt="{{ imageAlt }}" class="article__img">
-            <figcaption>{{ imageAlt }}</figcaption>
+            {# <figcaption>{{ imageAlt }}</figcaption> #}
         </figure>
 
-        {{ content | safe }}
+        <div class="article__content">
+            {{ content | safe }}
+        </div>
     </div>
+
+    {% include "cta-section.njk" %}
 </article>
