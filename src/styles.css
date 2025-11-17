@@ -423,7 +423,7 @@ a {
 }
 
 .faq {
-
+    background-color: #2B3D4F;
 }
 
 .faq__container {
@@ -431,7 +431,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333;
+    color: #ECF0F1;
     gap: 3rem;
 }
 
@@ -443,14 +443,14 @@ a {
 }
 
 .faq__item {
-    background-color: #2B3D4F;
+    background-color: #4a6a88;
     border-radius: 5px;
     transition: height 0.15s;
 }
 
 .faq__question {
     padding: 1rem;
-    background-color: #2B3D4F;
+    background-color: #3e576f;
     color: #ECF0F1;
     border-radius: 5px;
     transition: background-color 0.15s;
@@ -459,15 +459,14 @@ a {
 
 .faq__question:hover {
     cursor: pointer;
-    background-color: #3e576f;
+    background-color: #597896;
 }
 
 .faq__answer {
     margin-left: 3rem;
-    color: #b7baba;
-    padding-bottom: 1rem;
+    color: #ECF0F1;
+    padding: 1.5rem 0;
     margin-right: 4rem;
-    padding-top: 0.5rem;
 }
 
 .meet {
