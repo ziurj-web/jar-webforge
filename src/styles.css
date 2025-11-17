@@ -138,6 +138,7 @@ a {
 .header__title-yours {
     color: #E74C3C;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 .header__subtext {
