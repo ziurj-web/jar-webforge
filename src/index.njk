@@ -49,22 +49,28 @@ layout: "base.njk"
 <section class="services">
   <div class="services__container container">
     <h2 class="services__title section__title">Rapid Website Launch Packages</h2>
+    <p class="services__intro">Choose from our starter, standard, or maintenance packages to quickly launch or maintain your website.</p>
+
     <div class="services__cards-container">
+
+      <!-- Starter Landing Page -->
       <div class="services__card">
-        <p class="services__card-title">Starter Landing Page</p>
-        <p class="services__card-price">500<span class="services__card-price-currency">USD</span></p>
+        <h3 class="services__card-title">Starter Landing Page</h3>
+        <p class="services__card-price"><span class="services__card-price-value">1000</span> <span class="services__card-price-currency">USD</span></p>
         <ul class="services__card-list">
-          <li class="services__card-list-item">1-page website with essential sections (hero, services, about, contact)</li>
-          <li class="services__card-list-item">Mobile-friendly & performance-optimized design</li>
-          <li class="services__card-list-item">SEO-ready</li>
-          <li class="services__card-list-item">Google integration (Business Profile, Analytics, Search Console)</li>
+          <li class="services__card-list-item">Single landing page</li>
+          <li class="services__card-list-item">Responsive design for all devices</li>
+          <li class="services__card-list-item">SEO-friendly structure</li>
+          <li class="services__card-list-item">Fast loading speeds</li>
+          <li class="services__card-list-item">Google integration</li>
         </ul>
       </div>
 
-      <div class="services__card services__card-recommended">
-        <p class="services__card-recommended-title">RECOMMENDED</p>
-        <p class="services__card-title">Standard Website</p>
-        <p class="services__card-price service__card-price-recommended">1000<span class="services__card-price-currency">USD</span></p>
+      <!-- Standard Website - Recommended -->
+      <div class="services__card services__card-recommended" aria-label="Recommended Package">
+        <div class="services__card-recommended-title">RECOMMENDED</div>
+        <h3 class="services__card-title">Standard Website</h3>
+        <p class="services__card-price service__card-price-recommended"><span class="services__card-price-value">1500+</span> <span class="services__card-price-currency">USD</span></p>
         <ul class="services__card-list">
           <li class="services__card-list-item services__card-list-item-white">Up to 5 pages (Home, About, Services, Contact, etc.)</li>
           <li class="services__card-list-item services__card-list-item-white">Mobile-friendly & performance-optimized</li>
@@ -74,10 +80,11 @@ layout: "base.njk"
         </ul>
       </div>
 
+      <!-- Maintenance Plan -->
       <div class="services__card">
-        <p class="services__card-recommended-title">Maintenance Plan</p>
-        <p class="services__card-title">Support & Updates</p>
-        <p class="services__card-price">250<span class="services__card-price-currency">USD</span></p>
+        <div class="services__card-recommended-title">Maintenance Plan</div>
+        <h3 class="services__card-title">Support & Updates</h3>
+        <p class="services__card-price"><span class="services__card-price-value">300</span> <span class="services__card-price-currency">USD</span></p>
         <ul class="services__card-list">
           <li class="services__card-list-item services__card-list-item-gold services__card-list-item-bold">Ongoing support and updates</li>
           <li class="services__card-list-item services__card-list-item-gold">SEO & Google integration upkeep</li>
@@ -85,13 +92,16 @@ layout: "base.njk"
           <li class="services__card-list-item">Up to 5 pages maintained*</li>
           <li class="services__card-list-item">Mobile-friendly & performance-optimized</li>
           <li class="services__card-list-item">Optional blog management</li>
+          <li class="services__card-list-item-note">*Additional charges for pages beyond the initial 5.</li>
         </ul>
-        <p class="services_card-asterisk">*Additional charges for pages beyond the initial 5.</p>
       </div>
+
     </div>
-    <a href="#meet" class="cta-button">Book Your Website Call</a>
+
+    <a href="#meet" class="cta-button" role="button">Book Your Website Call</a>
   </div>
 </section>
+
 
 <section class="development">
   <div class="development__container container">
